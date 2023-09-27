@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.calculator-container {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  margin-bottom: 5px;
+}
+
+.button {
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 25px;
+}
+
+.button.clear {
+  background: red;
+}
+
+/* ADD YOUR CSS RULES BELOW THESE COMMENTS */
+/* 1. Use ONLY Flexbox CSS properties */
+/* 2. Do not use or modify any widths using the "width" css attribute */
+/* 3. Do not use or modify any of the "margin" properties */
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.button.result {
+  display: flex;
+  flex-basis: 77%;
+  justify-content: left;
+}
+
+.button.clear {
+  display: flex;
+}
